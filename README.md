@@ -32,9 +32,8 @@ function create_extra_window(caption) {
 }
 ```
 <br/>
-### Please note that this function will not create two windows with the same caption/title<br/>
-### As it is an error handling method to avoid creating unlimited windows
 
+### Please note that this function will not create two windows with the same caption/title<br/>as it is an error handling method to avoid creating unlimited windows
 And now you can enjoy creating multiple gamemaker windows to debug your multiplayer game.
 
 # License
