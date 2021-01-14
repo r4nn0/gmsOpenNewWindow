@@ -14,7 +14,15 @@ Open two game windows at the same time in a GameMakerStudio2 project
 4. Here you will have to define the function in GameMaker so you can use it<br/>
 to do so you will write the following code in a create event of a persistent object<br/>
 preferably assign it to a global variable.<br/>
-``windowCreate=external_define("gmsOpenWindow.dll","open_another_window",dll_cdecl,ty_real,1, ty_string);``<br/>
+```
+windowCreate=external_define( "gmsOpenWindow.dll",
+                                "open_another_window",
+                                dll_cdecl,
+                                ty_real,
+                                1,
+                                ty_string);
+```                                
+<br/>
 the external_define function looks for the specified function (Second Parameter)<br/>
 in the library included (First Parameter), the third parameter specifies what type of function call is it<br/>
 the fourth parameter is the return type, the fifth parameter is how many parameters the function in the library takes in<br/>
